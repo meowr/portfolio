@@ -1,0 +1,100 @@
+body {
+	font-weight: 300
+}
+
+p {
+	font-size: @font-size-medium;
+}
+
+h2 {
+	letter-spacing: 0.04em;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.cover {
+	width: 100%;
+	height: 500px;
+}
+
+.logo {
+	margin: 130px auto 0 auto;
+	width: 61px;
+	height: 61px;
+	background: url("images/coverbg1.png") 60% 34%;
+	-webkit-mask-image: url(images/logo.svg);
+}
+
+.name {
+	font-size: 80px;
+	font-family: "Merriweather Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin: 25px auto 0 auto;
+	letter-spacing: -0.03em;
+	line-height: 1;
+	background: url("images/coverbg1.png") 60% 34%;
+	-webkit-text-fill-color: transparent;  
+	-webkit-background-clip: text;
+//	background-attachment: fixed;
+}
+
+.bio {
+	width: 420px;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: @font-size-large;
+	margin-top: 20px;
+	color: @gray-lighter;
+}
+
+.nav {
+	margin-top: 130px;
+	margin-bottom: 70px;
+}
+
+.nav a {
+	margin-right: 30px;
+	font-weight: 400;
+	font-size: @font-size-large;
+}
+
+.nav .last {
+	margin-right: 0;
+}
+
+#medium-carousel {
+	height: 100vh;
+	background-image: url("images/projectbg1.png");
+}
+
+#medium1 {
+	height: 80vh;
+	background: url("images/medium1.png") no-repeat center center;
+	background-size: contain;
+	margin-top: 10vh;
+}
+
+.carousel-caption {
+	position: relative;
+	left: 12%;
+	text-align: left;
+	text-shadow: none;
+	width: 76%;
+}
+
+.carousel-control {
+	text-shadow: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background: none;
+}
+
+.carousel-indicators {
+	opacity: 0.5;
+}
+
+.project-description {
+	margin-top: 30%;
+}
