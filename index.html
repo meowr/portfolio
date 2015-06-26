@@ -1,86 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tina chen</title>
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800,700,300,400' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tina Chen</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800,700,300,400' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   </head>
-  <body>
-    <div class="cover text-center">
-      <div class="logo"></div>
-      <div class="name">TINACHEN</div>
-      <div class="bio">Product designer in San Francisco. Problem solver. 
-Food enthusiast. Sometimes a traveler, dancer, artist.</div>
-      <div class="nav">
-        <a href="">Work</a>
-        <a href="">Play</a>
-        <a href="">About</a>
-        <a href="" class="last">Contact</a>
-    </div>
-    <div id="medium-carousel" class="carousel slide">
-    <ol class="carousel-indicators">
-        <li data-target="#medium-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#medium-carousel" data-slide-to="1"></li>
-        <li data-target="#medium-carousel" data-slide-to="2"></li>
-    </ol>   
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="carousel-caption">
-              <div class="row">
-                 <div class="col-md-6 project-description">
-                  <h2>MEDIUM</h2>
-                  <p>While at Medium, I designed for iOS, mobile and desktop web. Recent projects include the homepage redesign, tags, search, responses, publications, and emails. 2012-2015.</p>
-                </div>
-                 <div class="col-md-6" id="medium1"></div>
-              </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="carousel-caption">
-              <div class="row">
-                 <div class="col-md-6 project-description">
-                  <h2>MEDIUM</h2>
-                  <p>While at Medium, I designed for iOS, mobile and desktop web. Recent projects include the homepage redesign, tags, search, responses, publications, and emails. 2012-2015.</p>
-                </div>
-                 <div class="col-md-6" id="medium1"></div>
-              </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="carousel-caption">
-              <div class="row">
-                 <div class="col-md-6 project-description">
-                  <h2>MEDIUM</h2>
-                  <p>While at Medium, I designed for iOS, mobile and desktop web. Recent projects include the homepage redesign, tags, search, responses, publications, and emails. 2012-2015.</p>
-                </div>
-                 <div class="col-md-6" id="medium1"></div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#medium-carousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="carousel-control right" href="#medium-carousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div>
 
+  <body>
+
+    <div id="cover" class="text-center part">
+      <div class="intro section">
+        <div class="logo"><img src="images/logo.svg"></div>
+        <div class="name">TINACHEN</div>
+        <div class="blurb">Product designer in San Francisco. Problem solver. Food enthusiast. Sometimes a traveler, dancer, artist. Previously at Medium, Google, Stanford.</div>
+      </div>
+      <nav class="navHighlighter">
+        <li><a href="#cover" id="cover-nav"></a></li>
+        <div class="links">
+          <li><a href="#work" id="work-nav">Work</a></li>
+          <li><a href="#play" id="play-nav">Play</a></li>
+          <li><a href="#contact" id="contact-nav" class="last">Contact</a></li>
+        </div>
+      </nav>
     </div>
+    <section id="work">
+      <div id="medium-carousel" class="carousel slide part">
+        <ol class="carousel-indicators">
+            <li data-target="#medium-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#medium-carousel" data-slide-to="1"></li>
+            <li data-target="#medium-carousel" data-slide-to="2"></li>
+            <li data-target="#medium-carousel" data-slide-to="3"></li>
+            <li data-target="#medium-carousel" data-slide-to="4"></li>
+        </ol>   
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Medium</h2>
+                <p>While at Medium, I led the design of the homepage to make it more engaging and responsive to different types of users.</p>
+              </div>
+              <img src="images/homepage-1.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Medium</h2>
+                <p>The homepage was designed simultaneously for large and small screens.</p>
+              </div>
+              <img src="images/homepage-2.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">    
+              <div class="project-description">
+                <h2>Medium</h2>
+                <p>I also led the design for search, which is now instant and intelligent.</p>
+              </div>
+              <img src="images/search-1.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Medium</h2>
+                <p>Diverse search results increase the ability to find relevant stories.</p>
+              </div>
+              <img src="images/search.gif" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Medium</h2>
+                <p>I proposed, designed, and helped launch a simple tagging system that helps writers get the right exposure for their stories, and to show readers related content they can dig into.</p>
+              </div>
+              <img src="images/tagging.gif" class="project-image">
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#medium-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#medium-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+      <div id="google-plus-carousel" class="carousel slide part">
+        <ol class="carousel-indicators">
+            <li data-target="#google-plus-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="1"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="2"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="3"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="4"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="5"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="6"></li>
+            <li data-target="#google-plus-carousel" data-slide-to="7"></li>
+        </ol>   
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>My last project at Google was events, which I designed from concept to launch. It is a full-featured event planning and photo sharing experience.</p>
+              </div>
+              <img src="images/events-1.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>Events is cross-platform with iOS and Android apps.</p>
+              </div>
+              <img src="images/events-2.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>Creation of events is quick and intelligent.</p>
+              </div>
+              <img src="images/events-3.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>Events are interactive, and photo sharing is seamless and instant.</p>
+              </div>
+              <img src="images/events-4.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption carousel-caption-video">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>Events launch video</p>
+              </div>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/GN7qw6UZZdg" frameborder="0" allowfullscreen class="video"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>As part of a tactical design and protoyping team, I designed a better photo lightbox.</p>
+              </div>
+              <img src="images/lightbox-1.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>A detail pane slides in when needed.</p>
+              </div>
+              <img src="images/lightbox-2.png" class="project-image-small">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Google+</h2>
+                <p>Quickly browse photo thumbnails.</p>
+              </div>
+              <img src="images/lightbox-3.png" class="project-image-small">
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#google-plus-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#google-plus-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+      <div id="blogger-carousel" class="carousel slide part">
+        <ol class="carousel-indicators">
+            <li data-target="#blogger-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogger-carousel" data-slide-to="1"></li>
+            <li data-target="#blogger-carousel" data-slide-to="2"></li>
+            <li data-target="#blogger-carousel" data-slide-to="3"></li>
+            <li data-target="#blogger-carousel" data-slide-to="4"></li>
+            <li data-target="#blogger-carousel" data-slide-to="5"></li>
+        </ol>   
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Blogger</h2>
+                <p>My first project as design lead on Blogger was a complete redesign.</p>
+              </div>
+              <img src="images/blogger-1.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Blogger</h2>
+                <p>We added a rich wysiwyg writing experience.</p>
+              </div>
+              <img src="images/blogger-2.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Blogger</h2>
+                <p>The first official Blogger mobile apps for iOS and Android.</p>
+              </div>
+              <img src="images/blogger-3.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Blogger</h2>
+                <p>Blogger's new template system is easy and powerful, designed for all screen sizes.</p>
+              </div>
+              <img src="images/blogger-4.png" class="project-image">
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption carousel-caption-video">
+              <div class="project-description">
+                <h2>Blogger</h2>
+                <p>The templates are rich and interactive.</p>
+              </div>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/lpDQF2lFnBU" frameborder="0" allowfullscreen class="video"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#blogger-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#blogger-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    <section id="play">
+      <div id="play-carousel" class="carousel slide part">
+        <ol class="carousel-indicators">
+            <li data-target="#play-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#play-carousel" data-slide-to="1"></li>
+            <li data-target="#play-carousel" data-slide-to="2"></li>
+            <li data-target="#play-carousel" data-slide-to="3"></li>
+        </ol>   
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Peru</h2>
+                <img src="images/peru.png" class="project-image">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Seoul</h2>
+                <img src="images/seoul.png" class="project-image">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>New Zealand</h2>
+                <img src="images/newzealand.png" class="project-image">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="project-description">
+                <h2>Sketches</h2>
+                <img src="images/sketches.png" class="project-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control left" href="#play-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#play-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="part">
+      <div class="row">
+        <div class="col-md-5" id="contact-photo"></div>
+        <div class="col-md-4" id="contact-bio">
+          <p>See what I'm up to on <a href="https://instagram.com/meowr/">Instagram</a>, contact me via <a href="tinatxchen@gmail.com">email</a>, message me on <a href="https://twitter.com/@meowr">Twitter</a>, or connect on <a href="https://www.linkedin.com/pub/tina-chen/b/889/8a3">LinkedIn</a>.
+          <p>Most recently I was a product designer at <a href="medium.com">Medium</a>, where I led the design of the homepage, search, tags, and other discovery and delivery initiatives.</p>
+          <p>Prior to that, I was a senior designer at Google where I designed a number of social products, including Google+ events, the photo lightbox, and profiles. I also led design on Blogger, was on the core team redesigning AdWords, and worked on a number of 20% projects, including one on Rwandan education.</p>
+        </div>
+      </div>
+    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/navScript.js"></script>
+    <script src="js/jquery.panelSnap.js"></script> 
     <script type="text/javascript">
       $(document).ready(function(){
-           $("#medium-carousel").carousel({
-               interval : false
-           });
+       $('body').panelSnap(options);
+       $('body').panelSnap();
+      });
+
+      var secondaryNav = $('nav'),
+        secondaryNavTopPosition = secondaryNav.offset().top;
+
+      var options = {
+      panelSelector: '.part'      
+      };
+       
+      $(window).on('scroll', function(){
+        if($(window).scrollTop() > secondaryNavTopPosition ) {
+          secondaryNav.addClass('is-fixed');  
+          setTimeout(function() {
+            $('#cover-nav').addClass('slide-in');
+          }, 0);
+        } else {
+          secondaryNav.removeClass('is-fixed');
+          setTimeout(function() {
+            $('#cover-nav').removeClass('slide-in');
+          }, 0);
+        }
       });
     </script>
   </body>
