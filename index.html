@@ -340,34 +340,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/navScript.js"></script>
-    <script src="js/jquery.panelSnap.js"></script> 
+    <!--<script src="js/navScript.js"></script> -->
+    <script src="js/jquery.panelSnap.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
        $('body').panelSnap(options);
        $('body').panelSnap();
       });
-
-      var secondaryNav = $('nav'),
-        secondaryNavTopPosition = secondaryNav.offset().top;
-
       var options = {
       panelSelector: '.part'      
       };
-       
-      $(window).on('scroll', function(){
-        if($(window).scrollTop() > secondaryNavTopPosition ) {
-          secondaryNav.addClass('is-fixed');  
-          setTimeout(function() {
-            $('#cover-nav').addClass('slide-in');
-          }, 0);
-        } else {
-          secondaryNav.removeClass('is-fixed');
-          setTimeout(function() {
-            $('#cover-nav').removeClass('slide-in');
-          }, 0);
-        }
+
+      $('#work-nav').click(function (event) {
+        event.preventDefault();
+        $('#work').scrollView();
       });
+
+      $('#play-nav').click(function (event) {
+        event.preventDefault();
+        $('#play').scrollView();
+      });
+
+      $('#contact-nav').click(function (event) {
+        event.preventDefault();
+        $('#contact').scrollView();
+      });
+
+      $('#cover-nav').click(function (event) {
+        event.preventDefault();
+        $('#cover').scrollView();
+      });
+
+      $.fn.scrollView = function () {
+        return this.each(function () {
+          $('html, body').animate({
+            scrollTop: $(this).offset().top
+          }, 500);
+        });
+      }
+
+      // var secondaryNav = $('nav'),
+      //   secondaryNavTopPosition = secondaryNav.offset().top;
+
+       
+      // $(window).on('scroll', function(){
+      //   if($(window).scrollTop() > secondaryNavTopPosition ) {
+      //     secondaryNav.addClass('is-fixed');  
+      //     setTimeout(function() {
+      //       $('#cover-nav').addClass('slide-in');
+      //     }, 0);
+      //   } else {
+      //     secondaryNav.removeClass('is-fixed');
+      //     setTimeout(function() {
+      //       $('#cover-nav').removeClass('slide-in');
+      //     }, 0);
+      //   }
+      // });
     </script>
   </body>
 </html>
