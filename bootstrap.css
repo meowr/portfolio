@@ -6930,6 +6930,7 @@ nav.is-fixed .links a {
     background: url("images/tina.png") no-repeat center center;
     background-size: contain;
     margin-right: 0;
+    right: 0;
     margin-bottom: 20px;
   }
   #contact .row {
